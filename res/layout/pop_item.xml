@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/id_pop_item_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/default_avatar_select"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        
+        android:layout_toRightOf="@id/id_pop_item_image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_pop_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有图片"
+            android:layout_gravity="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/id_pop_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:text="100张"
+            android:textColor="#444"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_pop_item_select"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/check_normal" />
+
+</RelativeLayout>
